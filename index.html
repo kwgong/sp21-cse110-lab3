@@ -11,8 +11,19 @@
         <link rel="mask-icon" href="favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-    </head>
 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <style>
+        @media screen and (min-width: 900px) {
+                article {
+                padding: 1rem 3rem;
+                }
+            }
+    </style>
     <body>
         <header>
         <div> <h1> <span style="color: #26001b"> Days Since Monday </span> </h1></div> 
@@ -21,9 +32,15 @@
         .box {
             background-color: #ffd3b4
         }
+
+
+         div {
+            font-family: 'Indie Flower', cursive; 
+        }
+        
         </style>
         <style>
-            /* Making the hover function for link*/
+            /* Making the hover and active function for link*/
             a {
                 background-color: powderblue;
                 transition: background-color .5s;
@@ -31,7 +48,16 @@
 
             a:hover {
                 color: rgba(247, 0, 255, 0.295);
-          }
+            }
+
+            a:active { 
+                color: rgba(255, 0, 0, 0.247);
+                } 
+
+            a:active { 
+                background: #eee; 
+            }  
+
         </style>
         <div class="box">
             <ul> 
@@ -138,9 +164,11 @@
             
 
                 }
+                /* Position text into oval*/ 
+
                 .pos1 {
                     position: relative;
-                    top: 0.8cm;
+                    top: 0.5cm;
                     right: 5cm;
                     left: 0.2cm;
                 }
@@ -196,7 +224,7 @@
             <img
                 src="images/gudetama.webp"
                 alt="gudetama"
-                width="250"
+                width="300"
             />
             </div>
 
@@ -298,16 +326,16 @@
             </style>
 
             <div class="Day3">
-                <div class="oval">
-                    <h2 class="position"> Day 3: Wonky Wednesday </h2> 
-                </div>
-                <div class="posbunny">
-                    <img
-                        src="images/shutterstock_1290320698.jpg.webp"
-                        alt="puppy"
-                        width="500"
-                    />
-                </div>
+                    <div class="oval">
+                        <h2 class="position"> Day 3: Wonky Wednesday </h2> 
+                    </div>
+                    <div class="posbunny">
+                        <img
+                            src="images/shutterstock_1290320698.jpg.webp"
+                            alt="puppy"
+                            width="600"
+                        />
+                    </div>
             </div>
 
             <div class="ovalSound3">
@@ -349,6 +377,7 @@
 
             <hr> 
 
+            <div>
             <h2> Random Things! </h2>
             <h3> Things that are definitely not good for me but it is.</h3>
         
@@ -397,6 +426,7 @@
                 <label for="eatout">Eat Out</label><br>
                 <input type="submit" value="Submit">
             </form>
+        </div>
 
         </main>
 

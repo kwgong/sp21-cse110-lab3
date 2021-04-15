@@ -72,7 +72,7 @@
                     position: relative;
                     right: 10cm;
                     left: 20cm;
-                    bottom: 1cm;
+                    bottom: 0.5cm;
                 }
             </style>
 
@@ -81,7 +81,7 @@
                 class="posbunny"
                 src="images/bunny.jpg"
                 alt="bun-buns"
-                width="250"
+                width="300"
             />
 
             <style>
@@ -94,7 +94,7 @@
                     position: relative;
                     right: 5cm;
                     left: 1.5cm;
-                    bottom: 10cm;
+                    bottom: 7cm;
 
                 }
                 /* Positioning sound in oval */
@@ -123,7 +123,8 @@
                     position: relative;
                     right: 10cm;
                     left: 1.5cm;
-                    bottom: 10cm;
+                    bottom: 7cm;
+            
 
                 }
                 .pos1 {
@@ -149,7 +150,7 @@
                 </div>
             </div>
 
-            <hr> 
+
             <style>
                 /* Centering Day 2 title and image */
                 .bday2 {
@@ -199,6 +200,7 @@
 
             <div class="bday21">
                 <style>
+                    /*Box around the video*/
                     .boxVid {
                         display: block;
                         width: 300px;
@@ -206,15 +208,8 @@
                         background: #ffe8e8;
                         border-radius: 50px / 50px;
                     }
-                    .posVid {
-                        position: absolute;
-                        top: 30cm;
-                        left: 1cm;
-                        right: 5cm;
-                    }
-
+                    /*Positioning of the video in box*/
                     .centering {
-                        margin: auto;
                         padding-top: 0.5cm;
                         padding-left: 0.7cm;
                     }
@@ -230,50 +225,116 @@
                     </div>
                 </div>
     
-                <p>
-                    Tuesday was <em> busy </em> but at least I was able to get somethings done!
-                    Then for some reason my shoulders really hurt, but I got a burrito. 
-    
-                    <section> <b> Highlights of the Day: </b>
+                <style>
+
+                    /* Make an oval for journal content*/
+                    .ovalDay2 {
+                        margin-top: 1cm;
+                        width: 500px;
+                        height: 200px;
+                        background: #ffdcdc;
+                        border-radius: 50px / 50px;
+                    }
+
+                    /*Position for journal content*/
+                    .posT {
+                        padding-top: 0.5cm;
+                        padding-left: 0.5cm;
+                        padding-right: 0.5cm;
+                    }
+
+                    /*Position for journal highlight*/
+                    .posH {
+                        padding-top: 0.1cm;
+                        padding-left: 0.5cm;
+                    }
+
+                </style>
+                <div class="ovalDay2">
+                    <p class="posT">
+                        Tuesday was <em> busy </em> but at least I was able to get somethings done!
+                        Then for some reason my shoulders really hurt, but I got a burrito. 
+                    </p>
+                    <section class="posH"> <b> Highlights of the Day: </b>
                         <ol>
                             <li> <i> getting a burrito </i></li>
                             <li> <i> talking to friends </i> </li>
                         </ol>
                     </section>
+                </div>
+            </div>
+
+            <style>
+                /*Placement for Day 3*/
+                .Day3 {
+                    margin-top: 3cm;
+                }
+
+                /*Oval for sound day 3*/
+                .ovalSound3 {
+                    width: 500px;
+                    height: 100px;
+                    background: #ffe8e8;
+                    border-radius: 50px / 50px;
+                }
+
+                /*Position for sound 3*/
+                .posSound3 {
+                    padding-top: 1cm;
+                    padding-left: 1cm;
+                    padding-bottom: 1cm;
+                }
+            </style>
+
+            <div class="Day3">
+                <div class="oval">
+                    <h2 class="position"> Day 3: Wonky Wednesday </h2> 
+                </div>
+                <div class="posbunny">
+                    <img
+                        src="images/shutterstock_1290320698.jpg.webp"
+                        alt="puppy"
+                        width="500"
+                    />
+                </div>
+            </div>
+
+            <div class="ovalSound3">
+                <section class="posSound3"> Sound of the Day: 
+                    <audio controls>
+                        <source src="images/geese.wav" type="audio/wav">
+                    </audio>
+                </section>
+            </div>
+
+            <div class="ovalDay2">
+                <p class="posT">
+                    Wednesday is going slow so far. I think I'm stressed for all the deadlines though.
+                    Also for some reason I had a <em> nightmare </em>.
+    
+                    <section class="posH"> <b> Highlights of the Day: </b>
+                        <ol>
+                            <li> <i>getting lasgna</i> </li>
+                            <li> <i>talking to friends again!</i> </li>
+                        </ol>
+                    </section>
                 </p>
             </div>
 
-
             <hr> 
 
-            <h2 id="Day3"> Day 3: Wonky Wednesday</h2>
-            <img
-                src="images/shutterstock_1290320698.jpg.webp"
-                alt="puppy"
-                width="250"
-            />
-            <section> Sound of the Day: 
-                <audio controls>
-                    <source src="images/geese.wav" type="audio/wav">
-                </audio>
-            </section>
-            <p>
-                Wednesday is going slow so far. I think I'm stressed for all the deadlines though.
-                Also for some reason I had a <em> nightmare </em>.
+            <style>
+                .goal {
+                    padding-left: 17cm;
+                }
+            </style>
+            <div class="box">
+                <h2> Goal of the Week </h2>
+                <p class="goal"> <strong> <span style="color: mediumvioletred"> Stay Positive! </span> <br> (But realistic) <br> </strong></p> 
 
-                <section> <b> Highlights of the Day: </b>
-                    <ol>
-                        <li> <i>getting lasgna</i> </li>
-                        <li> <i>talking to friends again!</i> </li>
-                    </ol>
-                </section>
-            </p>
+            </div>
 
-            <hr> 
-
-            <h2> Goal of the Week </h2>
-            <p> <strong> <span style="color: mediumvioletred"> Stay Positive! </span> <br> (But realistic) <br> </strong></p> 
-
+    
 
             <hr> 
 
@@ -281,7 +342,14 @@
             <h3> Things that are definitely not good for me but it is.</h3>
             <details> 
                 <summary> Sneaky Peaky </summary>
-                <img
+
+                <style>
+                    .posGrid {
+                        display: inline-grid;
+                    }
+                </style>
+                <div class="posGrid">
+                    <img
                     src="images/tonkotsuramenfront.jpg"
                     alt="ramen"
                     width="250"
@@ -298,6 +366,7 @@
                     alt="somi"
                     width="250"
                 />
+                </div>
 
             </details>
 

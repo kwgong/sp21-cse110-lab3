@@ -85,6 +85,7 @@
             />
 
             <style>
+                /* Framing the sound element */
                 .ovalsound {
                     width: 500px;
                     height: 100px;
@@ -96,6 +97,7 @@
                     bottom: 10cm;
 
                 }
+                /* Positioning sound in oval */
                 .possound {
                     position: relative;
                     top: 1cm;
@@ -149,35 +151,96 @@
 
             <hr> 
             <style>
-                /* Centering Day 2 elements */
+                /* Centering Day 2 title and image */
                 .bday2 {
                     display: flex;
-                    align-content: center;
+                    justify-content: space-evenly;
                 }
+
             </style>
             <div class="bday2">
-                <h2 id="Day2"> Day 2: Too-Far-Gone Tuesday</h2>
+                <style>
+                    .oval2 {
+                        width: 500px;
+                        height: 50px;
+                        background: #ff9292;
+                        border-radius: 50px / 50px;
+                        margin-right: 1cm;
+                    }
+
+                    .posDay2 {
+                        position: relative;
+                        left: 2cm;
+                        bottom: 0.2cm;
+
+                    }
+
+                </style>
+                <div class="oval2">
+                    <div class="posDay2">
+                        <h2 id="Day2"> Day 2: Too-Far-Gone Tuesday</h2>
+                    </div>
+                </div>
             <img
                 src="images/gudetama.webp"
                 alt="gudetama"
                 width="250"
             />
-            <section> Video of the Day: 
-                <video width="250" height="250" controls>
-                    <source src="images/video.mp4" type="video/mp4">
-                </video>
-            </section>
-            <p>
-                Tuesday was <em> busy </em> but at least I was able to get somethings done!
-                Then for some reason my shoulders really hurt, but I got a burrito. 
+            </div>
 
-                <section> <b> Highlights of the Day: </b>
-                    <ol>
-                        <li> <i> getting a burrito </i></li>
-                        <li> <i> talking to friends </i> </li>
-                    </ol>
-                </section>
-            </p>
+            <style>
+                 /* Centering Day 2 video and content */
+                 .bday21 {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+            </style>
+
+            <div class="bday21">
+                <style>
+                    .boxVid {
+                        display: block;
+                        width: 300px;
+                        height: 300px;
+                        background: #ffe8e8;
+                        border-radius: 50px / 50px;
+                    }
+                    .posVid {
+                        position: absolute;
+                        top: 30cm;
+                        left: 1cm;
+                        right: 5cm;
+                    }
+
+                    .centering {
+                        margin: auto;
+                        padding-top: 0.5cm;
+                        padding-left: 0.7cm;
+                    }
+                </style>
+    
+                <div class="boxVid">
+                    <div class="centering">
+                        <section> Video of the Day: 
+                            <video width="250" height="250" controls>
+                                <source src="images/video.mp4" type="video/mp4">
+                            </video>
+                        </section>
+                    </div>
+                </div>
+    
+                <p>
+                    Tuesday was <em> busy </em> but at least I was able to get somethings done!
+                    Then for some reason my shoulders really hurt, but I got a burrito. 
+    
+                    <section> <b> Highlights of the Day: </b>
+                        <ol>
+                            <li> <i> getting a burrito </i></li>
+                            <li> <i> talking to friends </i> </li>
+                        </ol>
+                    </section>
+                </p>
             </div>
 
 

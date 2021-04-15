@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <!DOCTYPE html>
 <html lang=”en”>
     <head>
@@ -18,46 +15,148 @@
 
     <body>
         <header>
-        <div> <h1> <span style="color:darkmagenta"> Days Since Monday </span> </h1></div> 
+        <div> <h1> <span style="color: #26001b"> Days Since Monday </span> </h1></div> 
         <nav> 
-        <ul> 
-            <li><a href="https://www.youtube.com/watch?v=amtuB-2wGeQ"> Cute puppy videos! </a></li>
-            <li> Day 1: Monday Hurts </li>
-            <li> Day 2: Too-Far-Gone Tuesday</li>
-            <li> Day 3: Wonky Wednesday</li>
-        </ul>
+        <style>
+        .box {
+            background-color: #ffd3b4
+        }
+        </style>
+        <div class="box">
+            <ul> 
+                <li><a href="https://www.youtube.com/watch?v=amtuB-2wGeQ"> Cute puppy videos! </a></li>
+                <li> Day 1: Monday Hurts </li>
+                <li> Day 2: Too-Far-Gone Tuesday</li>
+                <li> Day 3: Wonky Wednesday</li>
+            </ul>
+        </div>
         </nav>
 
         <hr> 
 
         </header>
+
+
+        <style>
+            /* Creates an oval shape for journal titles*/
+            .oval {
+                width: 400px;
+                height: 50px;
+                background: #ff9292;
+                border-radius: 50px / 50px;
+                position: relative;
+                left: 3cm;
+            }
+            /* Sets the position for monday title*/
+            .position {
+                position: relative;
+                top: 0.3cm;
+                left: 2.2cm;
+            }
+
+        </style>
         <main> 
-            <h2 id="Day1"> Day 1: Monday Hurts </h2> 
+            <div class="oval">
+                <h2 class="position"> Day 1: Monday Hurts </h2> 
+            </div>
+
+            <style>
+                /* Creates a border around for all images*/
+                img {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                }
+                /* Sets the position for the bunny image*/
+                .posbunny {
+                    position: relative;
+                    right: 10cm;
+                    left: 20cm;
+                    bottom: 1cm;
+                }
+            </style>
+
             <img
+                display="inline"
+                class="posbunny"
                 src="images/bunny.jpg"
                 alt="bun-buns"
                 width="250"
             />
-            <section> Sound of the Day: 
-                <audio controls>
-                    <source src="images/keyboard.wav" type="audio/wav">
-                </audio>
-            </section>
-            <p>
-                Monday started off like the Monday on Week 1. I had super spicy noodles that was really yummy. 
-                Also, played with the cat that comes visit every now and then. Mondays kind of hurt.
 
-                <section> <b> Highlights of the Day: </b> 
-                <ol>
-                    <li> <i>playing with the cat</i> </li>
-                    <li> <i>getting a cup of coffee</i> </li>
-                </ol>
+            <style>
+                .ovalsound {
+                    width: 500px;
+                    height: 100px;
+                    background: #ffe8e8;
+                    border-radius: 50px / 50px;
+                    position: relative;
+                    right: 5cm;
+                    left: 1.5cm;
+                    bottom: 10cm;
+
+                }
+                .possound {
+                    position: relative;
+                    top: 1cm;
+                    right: 1cm;
+                    left: 1cm;
+                }
+            </style>
+            <div class="ovalsound">
+                <section class="possound"> Sound of the Day: 
+                    <audio controls>
+                        <source src="images/keyboard.wav" type="audio/wav">
+                    </audio>
                 </section>
-            </p>
+            </div>
+
+            <style>
+                /* Creates an oval shape for journal entries*/
+                .oval1 {
+                    width: 500px;
+                    height: 200px;
+                    background: #ffdcdc;
+                    border-radius: 50px / 50px;
+                    position: relative;
+                    right: 10cm;
+                    left: 1.5cm;
+                    bottom: 10cm;
+
+                }
+                .pos1 {
+                    position: relative;
+                    top: 0.8cm;
+                    right: 5cm;
+                    left: 0.2cm;
+                }
+            </style>
+            <div class="oval1">
+                <div class="pos1">
+                    <p>
+                        Monday started off like the Monday on Week 1. I had super spicy noodles that was really yummy. 
+                        Also, played with the cat that comes visit every now and then. Mondays kind of hurt.
+        
+                        <section> <b> Highlights of the Day: </b> 
+                        <ol>
+                            <li> <i>playing with the cat</i> </li>
+                            <li> <i>getting a cup of coffee</i> </li>
+                        </ol>
+                        </section>
+                    </p>
+                </div>
+            </div>
 
             <hr> 
-
-            <h2 id="Day2"> Day 2: Too-Far-Gone Tuesday</h2>
+            <style>
+                /* Centering Day 2 elements */
+                .bday2 {
+                    display: flex;
+                    align-content: center;
+                }
+            </style>
+            <div class="bday2">
+                <h2 id="Day2"> Day 2: Too-Far-Gone Tuesday</h2>
             <img
                 src="images/gudetama.webp"
                 alt="gudetama"
@@ -79,6 +178,8 @@
                     </ol>
                 </section>
             </p>
+            </div>
+
 
             <hr> 
 
@@ -156,4 +257,3 @@
 
     </body>
 </html>
->>>>>>> Lab 2 Part 1

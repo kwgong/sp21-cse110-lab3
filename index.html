@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=”en”>
     <head>
-        <title>Document</title>
+        <title>Karen's Journal</title>
         <meta charset="UTF-8">
         <meta name="author" content="Karen Gong">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
@@ -29,17 +29,19 @@
         <header>
         <div> <h1> <span style="color: #26001b"> Days Since Monday </span> </h1></div> 
         <nav> 
+
+
         <style>
         .box {
             background-color: #ffd3b4
         }
-
-
          div {
             font-family: 'Indie Flower', cursive; 
         }
         
         </style>
+
+
         <style>
             /* Making the hover and active function for link*/
             a {
@@ -53,11 +55,17 @@
 
             a:active { 
                 color: rgba(255, 0, 0, 0.247);
-                } 
-
-            a:active { 
                 background: #eee; 
-            }  
+            } 
+
+            summary:hover{
+                color: #7b113a;
+            }
+            
+            summary:active { 
+                color: rgba(255, 0, 0, 0.247);
+                background: rgba(255, 0, 0, 0.247); 
+            } 
 
         </style>
         <div class="box">
@@ -70,350 +78,396 @@
         </div>
         </nav>
 
-        <hr> 
+
+        <div id="goal">
+            <h3> Goal of the Week </h3>
+            <p class="p2"> <strong> <span style="color: mediumvioletred"> Stay Positive! </span> <br> (But realistic) <br> </strong></p> 
+        </div>
 
         </header>
-
-
-        <style>
-            /* Creates an oval shape for journal titles*/
-            .oval {
-                width: 400px;
-                height: 50px;
-                background: #ff9292;
-                border-radius: 50px / 50px;
-                position: relative;
-                left: 3cm;
-            }
-            /* Sets the position for monday title*/
-            .position {
-                position: relative;
-                top: 0.3cm;
-                left: 2.2cm;
-            }
-
-        </style>
         <main> 
-            <div class="oval">
-                <h2 class="position"> Day 1: Monday Hurts </h2> 
-            </div>
-
             <style>
+                /* Makes an element for journal entry */
+                #journalentry {
+                    background-color: #ffe8e8;
+                    width: 37cm;
+                    height: 500px;
+                    border-radius: 50px / 50px;
+                    position: relative;
+                    align-content: center;
+                    padding-top: 1cm;
+                    padding-bottom: 1cm;
+                    margin-bottom: 0.5cm;
+                    margin-top: 0.5cm;
+
+                }
+
+                /*Journal entry for day 2 because of video*/
+                #journalentry2 {
+                    background-color: #ffe8e8;
+                    width: 37cm;
+                    height: 700px;
+                    border-radius: 50px / 50px;
+                    position: relative;
+                    align-content: center;
+                    padding-top: 1cm;
+                    padding-bottom: 1cm;
+                    margin-bottom: 0.5cm;
+                    margin-top: 0.5cm;
+
+                }
+
+                /*Container for journal*/ 
+                .journalcontainer {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                /*Display inside goals section*/
+                #goal {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
                 /* Creates a border around for all images*/
                 img {
                     border: 2px solid #98ddca;
                     border-style: dashed;
                     padding: .5em;
+                    margin-bottom: 1cm;
+                    margin-left: 1cm;
+                    margin-right: 1cm;
                 }
-                /* Sets the position for the bunny image*/
-                .posbunny {
-                    position: relative;
-                    right: 10cm;
-                    left: 20cm;
-                    bottom: 0.5cm;
-                }
-            </style>
 
-            <img
-                display="inline"
-                class="posbunny"
-                src="images/bunny.jpg"
-                alt="bun-buns"
-                width="300"
-            />
-
-            <style>
-                /* Framing the sound element */
-                .ovalsound {
-                    width: 500px;
+                /* Sets a border for sections*/
+                section {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ffdcdc;
+                    width: 400px;
                     height: 100px;
-                    background: #ffe8e8;
                     border-radius: 50px / 50px;
-                    position: relative;
-                    right: 5cm;
-                    left: 1.5cm;
-                    bottom: 7cm;
+                    padding-top: 1cm;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1cm;
+                    margin-bottom: 1cm;
+                    margin-left: 1cm;
+                    margin-right: 1cm;
+                }    
 
+                /*Sets the background for paragraphs*/
+                .p {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    width: 800px;
+                    height: 100px;
+                    border-radius: 50px / 50px;
+                    background-color: #ffb4b4;
+                    padding-top: 1cm;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1cm;
+                    margin-bottom: 1cm;
+                    margin-left: 1cm;
+                    margin-right: 1cm;
+                } 
+
+                /* Sets the background for audio*/
+                audio {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ffdcdc;
+                    width: 400px;
+                    height: 100px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 1cm;
+                    margin-top: 1cm;
+                    margin-bottom: 20px;
+                    margin-left: 1cm;
+                    margin-right: 1cm;
+                }   
+
+                /*Outline for video*/
+                video {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ffdcdc;
+                    width: 300px;
+                    height: 400px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center;
                 }
-                /* Positioning sound in oval */
-                .possound {
-                    position: relative;
-                    top: 1cm;
-                    right: 1cm;
-                    left: 1cm;
+
+                h2 {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ff9292;
+                    width: 700px;
+                    height: 50px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center;
                 }
+
+
             </style>
-            <div class="ovalsound">
-                <section class="possound"> Sound of the Day: 
+
+            <h2> Day 1: Monday Hurts</h2>
+
+            <!--Day 1 Journal Entry --> 
+            <div id="journalentry" class="journalcontainer">
+                <div>
                     <audio controls>
                         <source src="images/keyboard.wav" type="audio/wav">
                     </audio>
-                </section>
-            </div>
+                </div>
+                <div>
+                    <img
+                        src="images/bunny.jpg"
+                        alt="bun-buns"
+                        height="250"
+                        width="200"
+                    />
+                </div>
 
-            <style>
-                /* Creates an oval shape for journal entries*/
-                .oval1 {
-                    width: 500px;
-                    height: 200px;
-                    background: #ffdcdc;
-                    border-radius: 50px / 50px;
-                    position: relative;
-                    right: 10cm;
-                    left: 1.5cm;
-                    bottom: 7cm;
-            
+                <style>
+                    /*Positioning for cat gif*/ 
+                    #gif {
+                        position: absolute;
+                        top: 1cm;
+                        left: 22cm;
+                    }
+                </style>
+        
+                <img
+                    id="gif"
+                    src="images/cat.gif"
+                    alt="flower"
 
-                }
-                /* Position text into oval*/ 
+                />
+                  
 
-                .pos1 {
-                    position: relative;
-                    top: 0.5cm;
-                    right: 5cm;
-                    left: 0.2cm;
-                }
-            </style>
-            <div class="oval1">
-                <div class="pos1">
-                    <p>
+                <div>
+                    <p class="p">
                         Monday started off like the Monday on Week 1. I had super spicy noodles that was really yummy. 
                         Also, played with the cat that comes visit every now and then. Mondays kind of hurt.
         
-                        <section> <b> Highlights of the Day: </b> 
+                    </p>
+                </div>
+                <div>
+                    <section> <b> Highlights of the Day: </b> 
                         <ol>
                             <li> <i>playing with the cat</i> </li>
                             <li> <i>getting a cup of coffee</i> </li>
                         </ol>
                         </section>
-                    </p>
                 </div>
             </div>
 
-
-            <style>
-                /* Centering Day 2 title and image */
-                .bday2 {
-                    display: flex;
-                    justify-content: space-evenly;
-                }
-
-            </style>
-            <div class="bday2">
-                <style>
-                    .oval2 {
-                        width: 500px;
-                        height: 50px;
-                        background: #ff9292;
-                        border-radius: 50px / 50px;
-                        margin-right: 1cm;
-                    }
-
-                    .posDay2 {
-                        position: relative;
-                        left: 2cm;
-                        bottom: 0.2cm;
-
-                    }
-
-                </style>
-                <div class="oval2">
-                    <div class="posDay2">
-                        <h2 id="Day2"> Day 2: Too-Far-Gone Tuesday</h2>
-                    </div>
+            <h2> Day 2: Too-Far-Gone Tuesday</h2>
+            <!--Day 2 Journal Entry-->
+            <div id="journalentry2" class="journalcontainer">
+                <div>
+                    <img
+                        src="images/gudetama.webp"
+                        alt="gudetama"
+                        width="300"
+                    />
                 </div>
-            <img
-                src="images/gudetama.webp"
-                alt="gudetama"
-                width="300"
-            />
-            </div>
-
-            <style>
-                 /* Centering Day 2 video and content */
-                 .bday21 {
-                    display: flex;
-                    justify-content: space-evenly;
-                }
-
-            </style>
-
-            <div class="bday21">
-                <style>
-                    /*Box around the video*/
-                    .boxVid {
-                        display: block;
-                        width: 300px;
-                        height: 300px;
-                        background: #ffe8e8;
-                        border-radius: 50px / 50px;
-                    }
-                    /*Positioning of the video in box*/
-                    .centering {
-                        padding-top: 0.5cm;
-                        padding-left: 0.7cm;
-                    }
-                </style>
-    
-                <div class="boxVid">
-                    <div class="centering">
-                        <section> Video of the Day: 
-                            <video width="250" height="250" controls>
-                                <source src="images/video.mp4" type="video/mp4">
-                            </video>
-                        </section>
-                    </div>
+                <div>
+                    <video width="250" height="250" controls>
+                        <source src="images/video.mp4" type="video/mp4">
+                    </video>
                 </div>
-    
+
                 <style>
-
-                    /* Make an oval for journal content*/
-                    .ovalDay2 {
-                        margin-top: 1cm;
-                        width: 500px;
-                        height: 200px;
-                        background: #ffdcdc;
-                        border-radius: 50px / 50px;
+                    /*Positioning for gif*/ 
+                    #agif {
+                        position: absolute;
+                        bottom: 10cm;
+                        left: 22cm;
                     }
-
-                    /*Position for journal content*/
-                    .posT {
-                        padding-top: 0.5cm;
-                        padding-left: 0.5cm;
-                        padding-right: 0.5cm;
-                    }
-
-                    /*Position for journal highlight*/
-                    .posH {
-                        padding-top: 0.1cm;
-                        padding-left: 0.5cm;
-                    }
-
                 </style>
-                <div class="ovalDay2">
-                    <p class="posT">
-                        Tuesday was <em> busy </em> but at least I was able to get somethings done!
+        
+                <img
+                    id="agif"
+                    src="images/angry.gif"
+                    alt="flower"
+
+                />
+
+                <div>
+                    <p class="p">
+                        Tuesday was busy but at least I was able to get somethings done! 
                         Then for some reason my shoulders really hurt, but I got a burrito. 
                     </p>
-                    <section class="posH"> <b> Highlights of the Day: </b>
+                </div>
+                <div>
+                    <section> <b> Highlights of the Day: </b>
                         <ol>
                             <li> <i> getting a burrito </i></li>
                             <li> <i> talking to friends </i> </li>
                         </ol>
                     </section>
                 </div>
+
             </div>
 
-            <style>
-                /*Placement for Day 3*/
-                .Day3 {
-                    margin-top: 3cm;
-                }
-
-                /*Oval for sound day 3*/
-                .ovalSound3 {
-                    width: 500px;
-                    height: 100px;
-                    background: #ffe8e8;
-                    border-radius: 50px / 50px;
-                }
-
-                /*Position for sound 3*/
-                .posSound3 {
-                    padding-top: 1cm;
-                    padding-left: 1cm;
-                    padding-bottom: 1cm;
-                }
-            </style>
-
-            <div class="Day3">
-                    <div class="oval">
-                        <h2 class="position"> Day 3: Wonky Wednesday </h2> 
-                    </div>
-                    <div class="posbunny">
-                        <img
-                            src="images/shutterstock_1290320698.jpg.webp"
-                            alt="puppy"
-                            width="600"
-                        />
-                    </div>
-            </div>
-
-            <div class="ovalSound3">
-                <section class="posSound3"> Sound of the Day: 
+            <h2> Day 3: Wonky Wednesday </h2> 
+            <!--Day 3 Journal Entry-->
+            <div id="journalentry2" class="journalcontainer">
+                <div>
                     <audio controls>
                         <source src="images/geese.wav" type="audio/wav">
                     </audio>
-                </section>
-            </div>
+                </div>
+                <div>
+                    <img
+                        src="images/shutterstock_1290320698.jpg.webp"
+                        alt="puppy"
+                        width="600"
+                    />
+                </div>
 
-            <div class="ovalDay2">
-                <p class="posT">
-                    Wednesday is going slow so far. I think I'm stressed for all the deadlines though.
-                    Also for some reason I had a <em> nightmare </em>.
-    
-                    <section class="posH"> <b> Highlights of the Day: </b>
+                <style>
+                    /*Positioning for gif*/ 
+                    #ggif {
+                        position: absolute;
+                        bottom: 5.5cm;
+                        left: 2cm;
+                    }
+                </style>
+        
+                <img
+                    id="ggif"
+                    src="images/source.gif"
+                    alt="flower"
+                />
+
+                <div>
+                    <p class="p">
+                        Wednesday is going slow so far. I think I'm stressed for all the deadlines though.
+                        Also for some reason I had a nightmare.
+                    </p>
+                </div>
+                <div>
+                    <section> <b> Highlights of the Day: </b>
                         <ol>
                             <li> <i>getting lasgna</i> </li>
                             <li> <i>talking to friends again!</i> </li>
                         </ol>
                     </section>
-                </p>
+                </div>
             </div>
-
-            <hr> 
 
             <style>
-                .goal {
-                    padding-left: 17cm;
+
+                /*Oval for goal title*/
+                h3 {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ff9292;
+                    width: 400px;
+                    height: 50px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center; 
                 }
+
+                /*For stay positive*/
+                .p2 {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ffb4b4;
+                    width: 400px;
+                    height: 50px;
+                    border-radius: 50px / 50px; 
+                    margin-left: 1cm;
+                    display: grid;
+                    justify-content: center; 
+
+                }
+
+                /*For the things that are not good for me*/
+                .p3 {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ff9292;
+                    width: 400px;
+                    height: 50px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center; 
+                }
+
             </style>
-            <div class="box">
-                <h2> Goal of the Week </h2>
-                <p class="goal"> <strong> <span style="color: mediumvioletred"> Stay Positive! </span> <br> (But realistic) <br> </strong></p> 
 
-            </div>
 
-    
-
-            <hr> 
-
-            <div>
-            <h2> Random Things! </h2>
-            <h3> Things that are definitely not good for me but it is.</h3>
+            <h2 class="box"> Random Things! </h2>
+                <div>
+                    <h3 class="p3"> Things that are definitely not good for me but it is.</h3>
+                </div>
+                <div>
+                    <details> 
+                        <summary> Sneaky Peaky </summary>
         
-                <details> 
-                    <summary> Sneaky Peaky </summary>
-    
-                    <style>
-                        .posGrid {
-                            display: inline-grid;
-                        }
-                    </style>
-                    <div class="posGrid">
+                        <style>
+                            /*Positioning of the pictures*/
+                            .posGrid {
+                                display: inline-grid;
+                            }
+                        </style>
+                        <div class="posGrid">
+                            <img
+                            src="images/tonkotsuramenfront.jpg"
+                            alt="ramen"
+                            width="250"
+                        />
+        
                         <img
-                        src="images/tonkotsuramenfront.jpg"
-                        alt="ramen"
-                        width="250"
-                    />
-    
-                    <img
-                        src="images/Boba-Tea-2_1b74faffbe944b0675f0e20473d3ad34.jpg"
-                        alt="boba"
-                        width="250"
-                    />
-    
-                    <img
-                        src="images/somi-somi-2ab.jpg"
-                        alt="somi"
-                        width="250"
-                    />
-                    </div>
-    
-                </details>
+                            src="images/Boba-Tea-2_1b74faffbe944b0675f0e20473d3ad34.jpg"
+                            alt="boba"
+                            width="250"
+                        />
+        
+                        <img
+                            src="images/somi-somi-2ab.jpg"
+                            alt="somi"
+                            width="250"
+                        />
+                        </div>
+        
+                    </details>
+                </div>
            
 
-            <h2>Form!</h2>
+            <style>
+                form {
+                    border: 2px solid #98ddca;
+                    border-style: dashed;
+                    padding: .5em;
+                    background-color: #ff9292;
+                    width: 700px;
+                    height: 80px;
+                    border-radius: 50px / 50px;
+                    display: flex;
+                    justify-content: center; 
+                }
+            </style>
+
+            <h2>Tell me about your day!</h2>
             <form>
                 <label for="day">Day: </label><br>
                 <input type="text" id="day" name="day" value="Thursday"><br>
